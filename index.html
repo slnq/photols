@@ -1,5 +1,8 @@
 <html>
+	<meta charset="UTF-8">
 <head>
+	<title>夏果</title>
+	<link rel="icon" href="f.ico" type="image/x-icon">
   <style>
     body {
       margin: 0;
@@ -44,10 +47,15 @@
       color: transparent;
       -webkit-text-stroke: 0.5px #dcdce0;
       text-stroke: 0.5px #dcdce0;
-      pointer-events: none;
       z-index: 10;
       font-family: serif;
     }
+
+	.label a {
+	  color: transparent;
+	  text-decoration: none;
+	  pointer-events: auto;
+	}
 
     @media (max-aspect-ratio: 3/2) {
       .content {
@@ -67,7 +75,7 @@
   <div class="shadow" id="shadow"></div>
   <div class="content" id="container"></div>
 
-  <div class="label">夏果</div>
+  <div class="label"><a href="https://slnq.github.io">夏果</a></div>
 
   <script>
     const numbers = Array.from({ length: 16 }, (_, i) => i + 1);
